@@ -83,3 +83,16 @@ As you build this, keep your CSS organized:
 4. **Components:** Styles for `.card`, `.profile-img`, and `.btn`.
 
 **Would you like me to write the HTML structure for this card so you can focus on the CSS?**
+
+## Attributions
+
+- [Profile photo](https://unsplash.com/photos/a-man-with-a-long-white-beard-and-a-white-beard-p5s10b6QGQQ)
+- [Facebook Icon](https://www.freepik.com/icon/facebook_187189#fromView=search&page=1&position=63&uuid=652444e3-dd03-4e25-8f3a-6049d39cfb5a)
+- [Twitter Icon](https://www.freepik.com/icon/twitter_3670211#fromView=search&page=1&position=7&uuid=463f1dd0-30cf-432b-a198-0d132dd2ef87)
+- [Instagram Icon](https://www.freepik.com/icon/social_15528043#fromView=search&page=1&position=86&uuid=a2df4990-31ba-433b-8cb3-c9277f7d7647)
+- [YouTube Icon](https://www.freepik.com/icon/youtube_3670209#fromView=search&page=1&position=77&uuid=11d147d4-12ea-4638-8f5e-b1a367f68946)
+- [Heart Icon](https://www.freepik.com/icon/heart_12000662#fromView=search&page=1&position=47&uuid=64ca1897-77e6-4148-a3dd-1f022d73e264)
+- [Comments Icon](https://www.freepik.com/icon/chat_5440703#fromView=search&page=2&position=41&uuid=071f3af0-f8f4-4ab6-9c7c-f4fa1873db4a)
+- [Share Icon](https://www.freepik.com/icon/arrow_15782143#fromView=search&page=1&position=43&uuid=c247d002-0397-43af-9a56-5204bada831b)
+
+The profile photo was tinified by [tinify](https://tinypng.com/): decrease the image size.
