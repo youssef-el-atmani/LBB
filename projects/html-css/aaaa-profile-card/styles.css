@@ -1,3 +1,4 @@
+/* The alternative box model */
 html {
   box-sizing: border-box;
 }
