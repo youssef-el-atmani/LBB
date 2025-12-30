@@ -128,3 +128,14 @@ body {
     border-right: 1px solid var(--text-secondary);
   }
 }
+
+.author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Poppins", sans-serif;
+  a {
+    font-size: 30px;
+  }
+}
