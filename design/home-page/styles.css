@@ -1,0 +1,165 @@
+/* --- DESIGN TOKENS --- */
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --border: #334155;
+  --accent: #6366f1;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --font-main: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* --- RESET & BASE --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* --- HEADER --- */
+.hub-header {
+  padding: 80px 0 40px;
+  text-align: center;
+}
+
+.hub-header h1 {
+  font-size: 48px;
+  letter-spacing: -2px;
+  margin-bottom: 10px;
+}
+
+.hub-header p {
+  color: var(--text-secondary);
+  font-size: 18px;
+}
+
+/* --- TIMELINE LAYOUT --- */
+.hub-container {
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto 100px;
+  padding-left: 60px; /* Space for the timeline on the left */
+}
+
+.timeline-line {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+}
+
+/* --- CARDS --- */
+.series-node {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+/* The Dot on the Line */
+.series-node::before {
+  content: "";
+  position: absolute;
+  left: -38px; /* Perfectly centers dot on the 30px line */
+  top: 28px;
+  width: 14px;
+  height: 14px;
+  background: var(--bg);
+  border: 3px solid var(--accent);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.series-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 32px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.series-card:hover {
+  border-color: var(--accent);
+  transform: translateX(8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.date-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.series-card h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.stats-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.stat-pill {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.series-card p {
+  color: var(--text-secondary);
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+
+/* --- BUTTONS --- */
+.btn-group {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+}
+
+.btn-secondary {
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+}
+
+.btn:hover {
+  opacity: 0.9;
+  filter: brightness(1.2);
+}
